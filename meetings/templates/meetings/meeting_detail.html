@@ -27,10 +27,10 @@
                   <div class="date">
                     <h6>{{ meeting.get_month_str }} <span>{{ meeting.holding_date.day }}</span></h6>
                   </div>
-                  <a href="meeting-details.html"><img src="{{ meeting.image.url }}" alt=""></a>
+                  <a href="{% url 'meetings:meeting-detail' meeting.slug %}"><img src="{{ meeting.image.url }}" alt=""></a>
                 </div>
                 <div class="down-content">
-                  <a href="meeting-details.html"><h4>{{ meeting.title }}</h4></a>
+                  <a href="{% url 'meetings:meeting-detail' meeting.slug %}"><h4>{{ meeting.title }}</h4></a>
                   <p>{{ meeting.description }}</p>
                   <p class="description">
                     {{ meeting.content }}
