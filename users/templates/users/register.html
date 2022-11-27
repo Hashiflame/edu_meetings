@@ -1,0 +1,25 @@
+{% extends 'general/base.html' %}
+{% load static %}
+{% block content %}
+<section class="contact-us" id="contact">
+    <br>
+       {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li class="my_label">
+        {{ message }}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+    <form action="/register{% if is_mentor %}/mentor{% else %}/student{% endif %}" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+
+        <label class="my_label">{{ field.name }}: </label>{{ field }}
+        <br>
+        {% endfor %}
+        <input type="hidden" name="is_mentor" value="{{ is_mentor }}">
+        <input type="submit" value="OK">
+    </form>
+{% endblock %}

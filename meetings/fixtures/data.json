@@ -1,0 +1,41 @@
+[
+    {
+      "model": "meetings.Meeting",
+      "pk": 3,
+      "fields": {
+        "title": "John",
+        "price": 10.00,
+        "description": "Anything",
+        "content": "content",
+        "location": "Massachusetts",
+        "holding_date": "2022-11-11",
+        "book_phone_num": "+993-65-56-56-56"
+      }
+    },
+   {
+      "model": "meetings.Meeting",
+      "pk": 4,
+      "fields": {
+        "title": "JohnLennons",
+        "price": 10.00,
+        "description": "Anything",
+        "content": "content",
+        "location": "Massachusetts",
+        "holding_date": "2022-11-11",
+        "book_phone_num": "+993-65-56-56-56"
+      }
+    },
+     {
+      "model": "meetings.Meeting",
+      "pk": 5,
+      "fields": {
+        "title": "Johns",
+        "price": 10.00,
+        "description": "Anything",
+        "content": "content",
+        "location": "Massachusetts",
+        "holding_date": "2022-11-11",
+        "book_phone_num": "+993-65-56-56-56"
+      }
+    }
+]
